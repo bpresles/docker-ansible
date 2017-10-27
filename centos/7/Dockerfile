@@ -1,6 +1,6 @@
 FROM centos:7
 
-ARG ANSIBLE_VERSION=2.4
+ARG ANSIBLE_VERSION=2.4.1.0
 
 RUN yum update -y || exit 1
 RUN yum install supervisor gcc wget python python-devel libffi-devel openssl-devel -y || exit 1
