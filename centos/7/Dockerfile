@@ -9,6 +9,3 @@ RUN python get-pip.py || exit 1
 RUN rm -f get-pip.py
 RUN pip install --upgrade setuptools \
     && pip install http://releases.ansible.com/ansible/ansible-${ANSIBLE_VERSION}.tar.gz
-
-COPY data/systemctl_faker .
-RUN chmod +x systemctl_faker && rm -fr /bin/systemctl && ln -s /systemctl_faker /bin/systemctl
