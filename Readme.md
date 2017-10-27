@@ -16,3 +16,5 @@ What it does:
 Available tags:
 
 - ubuntu-xenial
+- debian-stretch
+- centos-7
